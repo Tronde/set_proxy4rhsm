@@ -1,12 +1,18 @@
 ---
 - name: Set HTTP proxy for subscription-manager (RHSM)
-  lineinfile:
+  ini_file:
     path: /etc/rhsm/rhsm.conf
-    regexp: '^proxy_hostname ='
-    line: proxy_hostname = {{ set_proxy4rhsm_proxy_hostname }}
+    section: server
+    option: proxy_hostname
+    value: {{ set_proxy4rhsm_proxy_hostname  }}
+    backup: yes
+  become: yes
 
 - name: Set proxy port for subscription-manager (RHSM)
-  lineinfile:
+  ini_file:
     path: /etc/rhsm/rhsm.conf
-    regexp: '^proxy_port ='
-    line: proxy_port = {{ set_proxy4rhsm_proxy_port }}
+    section: server
+    option: proxy_port
+    value: {{ set_proxy4rhsm_proxy_port  }}
+    backup: yes
+  become: yes
