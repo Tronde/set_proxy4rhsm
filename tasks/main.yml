@@ -3,10 +3,10 @@
   lineinfile:
     path: /etc/rhsm/rhsm.conf
     regexp: '^proxy_hostname ='
-    line: proxy_hostname = {{ proxy_hostname }}
+    line: proxy_hostname = {{ set_proxy4rhsm_proxy_hostname }}
 
 - name: Set proxy port for subscription-manager (RHSM)
   lineinfile:
     path: /etc/rhsm/rhsm.conf
     regexp: '^proxy_port ='
-    line: proxy_port = {{ proxy_port }}
+    line: proxy_port = {{ set_proxy4rhsm_proxy_port }}

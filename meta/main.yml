@@ -1,0 +1,28 @@
+galaxy_info:
+  author: Tronde
+  description: Set proxy in /etc/rhsm/rhsm.conf
+
+  # Choose a valid license ID from https://spdx.org - some suggested licenses:
+  # - BSD-3-Clause (default)
+  # - MIT
+  # - GPL-2.0-or-later
+  # - GPL-3.0-only
+  # - Apache-2.0
+  # - CC-BY-4.0
+  license: MIT
+
+  min_ansible_version: 2.9
+
+ platforms:
+ - name: EL
+   versions:
+   - 7
+   - 8
+
+  galaxy_tags: 
+    - proxy
+    - rhel7
+    - rhel8
+    - rhsm
+
+dependencies: []

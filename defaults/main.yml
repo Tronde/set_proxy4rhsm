@@ -1,0 +1,3 @@
+---
+set_proxy4rhsm_proxy_hostname: "proxy.example.com"
+set_proxy4rhsm_proxy_port: "3128"
