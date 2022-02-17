@@ -4,7 +4,7 @@
     path: /etc/rhsm/rhsm.conf
     section: server
     option: proxy_hostname
-    value: {{ set_proxy4rhsm_proxy_hostname  }}
+    value: "{{ set_proxy4rhsm_proxy_hostname  }}"
     backup: yes
   become: yes
 
@@ -13,6 +13,6 @@
     path: /etc/rhsm/rhsm.conf
     section: server
     option: proxy_port
-    value: {{ set_proxy4rhsm_proxy_port  }}
+    value: "{{ set_proxy4rhsm_proxy_port  }}"
     backup: yes
   become: yes
