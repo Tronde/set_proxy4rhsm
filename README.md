@@ -34,7 +34,7 @@ Including an example of how to use your role (for instance, with variables passe
       roles:
         - role: set_proxy4rhsm
           vars:
-            set_proxy4rhsm_proxy_hostname: "proxy.examle.com"
+            set_proxy4rhsm_proxy_hostname: "proxy.example.com"
             set_proxy4rhsm_proxy_port: "3128" 
 
 License
